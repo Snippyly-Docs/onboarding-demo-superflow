@@ -7,7 +7,7 @@ import { initSuperflow } from '@usesuperflow/client'
 
 export default function Home() {
   let [selected,setSelected] = useState(0)
-  let [color,setColor] = useState("#ffd0f5")
+  let [color,setColor] = useState("#D1CFFF")
 
   useEffect(()=>{
     initSuperflow('ae90zQEl8AktXcIVNzGg', {
