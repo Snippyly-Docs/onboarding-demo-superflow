@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import {useState, useEffect} from 'react'
-
+import { initSuperflow } from '@usesuperflow/client'
 
 
 export default function Home() {
@@ -10,7 +10,9 @@ export default function Home() {
   let [color,setColor] = useState("linear-gradient(indigo,red)")
 
   useEffect(()=>{
-
+    initSuperflow('ae90zQEl8AktXcIVNzGg', {
+      projectId: '8632958633006737'
+    });
   },[])
 
   return (
