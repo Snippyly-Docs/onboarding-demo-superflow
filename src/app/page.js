@@ -26,15 +26,17 @@ export default function Home() {
   
         <p class="mt-10 text-sm uppercase text-gray-600">Color Scheme</p>
         <div class="mt-3 flex space-x-3">
-          <div onClick={() => setColor("linear-gradient(indigo, black)")} class="relative h-8 w-8 cursor-pointer overflow-hidden rounded-full bg-slate-800 shadow-lg shadow-gray-400/60 hover:scale-110">
-            <span class="absolute h-full w-1/2 bg-indigo-600"></span>
+        <div onClick={() => setColor("#E5E5E5")} class="relative h-8 w-8 cursor-pointer overflow-hidden rounded-full bg-white shadow-lg shadow-gray-400/60 hover:scale-110">
+            <span class="absolute h-full bg-[#E5E5E5]"></span>
           </div>
-          <div onClick={() => setColor("linear-gradient(red, white)")} class="relative h-8 w-8 cursor-pointer overflow-hidden rounded-full bg-white shadow-lg shadow-gray-400/60 hover:scale-110">
-            <span class="absolute h-full w-1/2 bg-rose-600"></span>
+          <div onClick={() => setColor("#D1CFFF")} class="relative h-8 w-8 cursor-pointer overflow-hidden rounded-full bg-[#D1CFFF] shadow-lg shadow-gray-400/60 hover:scale-110">
+            <span class="absolute h-full bg-[red]"></span>
           </div>
-          <div onClick={() => setColor("linear-gradient(black, orange)")} class="relative h-8 w-8 cursor-pointer overflow-hidden rounded-full bg-orange-600 shadow-lg shadow-gray-400/60 hover:scale-110">
-            <span class="absolute h-full w-1/2 bg-slate-800"></span>
+          <div onClick={() => setColor("linear-gradient(#D7b8ff, #ffd0f5)")} class="relative h-8 w-8 cursor-pointer overflow-hidden rounded-full bg-[#D7b8ff] shadow-lg shadow-gray-400/60 hover:scale-110">
+            <span class="absolute h-full w-1/2 bg-[#ffd0f5]"></span>
           </div>
+          
+          
         </div>
   
         <div class="mt-10 space-y-2">
