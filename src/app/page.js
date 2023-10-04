@@ -7,7 +7,7 @@ import { initSuperflow } from '@usesuperflow/client'
 
 export default function Home() {
   let [selected,setSelected] = useState(0)
-  let [color,setColor] = useState("linear-gradient(indigo,red)")
+  let [color,setColor] = useState("#ffd0f5")
 
   useEffect(()=>{
     initSuperflow('ae90zQEl8AktXcIVNzGg', {
