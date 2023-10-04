@@ -7,7 +7,7 @@ import { initSuperflow } from '@usesuperflow/client'
 
 export default function Home() {
   let [selected,setSelected] = useState(0)
-  let [color,setColor] = useState("#D1CFFF")
+  let [color,setColor] = useState("linear-gradient(#D7b8ff, #ffd0f5)")
 
   useEffect(()=>{
     initSuperflow('ae90zQEl8AktXcIVNzGg', {
@@ -26,15 +26,17 @@ export default function Home() {
   
         <p class="mt-10 text-sm uppercase text-gray-600">Color Scheme</p>
         <div class="mt-3 flex space-x-3">
-        <div onClick={() => setColor("#E5E5E5")} class="relative h-8 w-8 cursor-pointer overflow-hidden rounded-full bg-white shadow-lg shadow-gray-400/60 hover:scale-110">
-            <span class="absolute h-full bg-[#E5E5E5]"></span>
+        <div onClick={() => setColor("linear-gradient(#D7b8ff, #ffd0f5)")} class="relative h-8 w-8 cursor-pointer overflow-hidden rounded-full bg-[#D7b8ff] shadow-lg shadow-gray-400/60 hover:scale-110">
+            <span class="absolute h-full w-1/2 bg-[#ffd0f5]"></span>
           </div>
+          
           <div onClick={() => setColor("#D1CFFF")} class="relative h-8 w-8 cursor-pointer overflow-hidden rounded-full bg-[#D1CFFF] shadow-lg shadow-gray-400/60 hover:scale-110">
             <span class="absolute h-full bg-[red]"></span>
           </div>
-          <div onClick={() => setColor("linear-gradient(#D7b8ff, #ffd0f5)")} class="relative h-8 w-8 cursor-pointer overflow-hidden rounded-full bg-[#D7b8ff] shadow-lg shadow-gray-400/60 hover:scale-110">
-            <span class="absolute h-full w-1/2 bg-[#ffd0f5]"></span>
+          <div onClick={() => setColor("#E5E5E5")} class="relative h-8 w-8 cursor-pointer overflow-hidden rounded-full bg-white shadow-lg shadow-gray-400/60 hover:scale-110">
+            <span class="absolute h-full bg-[#E5E5E5]"></span>
           </div>
+          
           
           
         </div>
